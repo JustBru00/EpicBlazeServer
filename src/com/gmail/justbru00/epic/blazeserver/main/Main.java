@@ -21,7 +21,7 @@ public class Main extends JavaPlugin {
 
 	@Override
 	public void onDisable() {	
-		
+		Messager.msgConsole("&cPlugin Disabled.");
 	}
 
 	@Override
