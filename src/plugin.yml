@@ -1,0 +1,9 @@
+name: EpicBlazeServer
+author: [Justin Brubaker]
+main: com.gmail.justbru00.epic.blazeserver.main.Main
+version: 1.0.0
+commands:
+    epicblazeserver:
+        description: A version and info command.
+    withdrawxp:
+        description: Withdraws xp from players xp balance.
