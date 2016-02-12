@@ -21,7 +21,28 @@ public class EpicBlazeServer implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		
+		if (command.getName().equalsIgnoreCase("epicblazeserver")) {
+			if (!sender.hasPermission("epicblazeserver.epicblazeserver")) {
+				// No permission msg
+				return true;
+			}
+			
+			if (args.length != 1) {
+				// Too many args msg
+				return true;
+			}
+			
+			if (args[0].equalsIgnoreCase("version")) {
+				// Send version msg
+				return true;
+			} else if (args[0].equalsIgnoreCase("info")) {
+				// Send info msg (Authors name and license link.) at least.
+				return true;
+			}
+			
+			return true;
+			// End of command
+		}
 		return false;
 	}
 }
